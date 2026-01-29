@@ -14,12 +14,17 @@
     'use strict';
 
     const CONFIG = {
-        standard: {
+        E3767: {
             model: "https://OC135.github.io/test3/radome.glb",
             texture: "" // 元に戻す用のURL（空なら何もしない）
         },
-        ocean: {
+        A50: {
             model: "https://OC135.github.io/test3/A-50 8.glb",
+            texture: "" // 元に戻す用のURL（空なら何もしない）
+        },
+
+        E4B: {
+            model: "https://OC135.github.io/test6/E412.glb",
             texture: "" // 元に戻す用のURL（空なら何もしない）
         }
     };
@@ -94,9 +99,9 @@
             <h3 style="margin:0 0 10px 0; font-size:14px; text-align:center;">radome addon</h3>
             <button id="toggle-uh60" style="width:100%; padding:10px; margin-bottom:10px; cursor:pointer; background:#444; color:white; border:none;">レドーム表示：OFF</button>
             <hr style="border:0.5px solid #555;">
-            <button class="skin-btn" data-skin="standard" style="width:100%; margin-top:10px; padding:8px; cursor:pointer; background:#179724; color:white; border:1px solid #555;">E-3,E767(A343,B763)</button>
-            <button class="skin-btn" data-skin="ocean" style="width:100%; margin-top:10px; padding:8px; cursor:pointer; background:#179724; color:white; border:1px solid #0088cc; font-weight:bold;">A-50(Il-76)</button>
-            <button class="skin-btn" data-skin="ocean" style="width:100%; margin-top:10px; padding:8px; cursor:pointer; background:#179724; color:white; border:1px solid #0088cc; font-weight:bold;">mushroom</button>
+            <button class="skin-btn" data-skin="E3767" style="width:100%; margin-top:10px; padding:8px; cursor:pointer; background:#179724; color:white; border:1px solid #555;">E-3,E767(A343,B763)</button>
+            <button class="skin-btn" data-skin="A50" style="width:100%; margin-top:10px; padding:8px; cursor:pointer; background:#179724; color:white; border:1px solid #0088cc; font-weight:bold;">A-50(Il-76)</button>
+            <button class="skin-btn" data-skin="E4B" style="width:100%; margin-top:10px; padding:8px; cursor:pointer; background:#179724; color:white; border:1px solid #0088cc; font-weight:bold;">E-4B</button>
         `;
         document.body.appendChild(panel);
 
