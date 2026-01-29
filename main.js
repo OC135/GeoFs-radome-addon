@@ -2,7 +2,7 @@
 // @name         radome
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  E767とE3のレドームを追加します。
+// @description  E767、E3、A50、E4のレドームを追加します。
 // @author       yamamofly / AIS1697
 // @match        http://*/geofs.php*
 // @match        https://*/geofs.php*
