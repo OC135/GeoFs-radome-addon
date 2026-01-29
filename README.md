@@ -1,4 +1,5 @@
 このアドオンはE-767、E-3、A-50、E-4のレドームを追加します。コンソールに直接貼り付けるタイプ(main.js)とブックマークを編集して使うタイプ(bookmarklet.js)の両方があるので何なりとお使いください。
+
 E-767
 <img width="1242" height="699" alt="スクリーンショット 2026-01-29 205449" src="https://github.com/user-attachments/assets/0f6d6d2c-77d7-4d92-8fb6-51a2638e6667" />
 E-3
