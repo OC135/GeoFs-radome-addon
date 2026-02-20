@@ -2,7 +2,7 @@
 // @name         radome
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  E767、E3、A50、E4のレドームを追加します。
+// @description  E767とE3のレドームを追加します。
 // @author       yamamofly / AIS1697
 // @match        http://*/geofs.php*
 // @match        https://*/geofs.php*
@@ -22,9 +22,12 @@
             model: "https://OC135.github.io/test3/A-50 8.glb",
             texture: "" // 元に戻す用のURL（空なら何もしない）
         },
-
         E4B: {
             model: "https://OC135.github.io/test6/E412.glb",
+            texture: "" // 元に戻す用のURL（空なら何もしない）
+        },
+        E8C: {
+            model: "https://OC135.github.io/test6/e8c2.glb",
             texture: "" // 元に戻す用のURL（空なら何もしない）
         }
     };
@@ -85,7 +88,7 @@
         btn.id = "uh60-tab-btn";
         btn.className = "mdl-button mdl-js-button geofs-f-standard-ui";
         btn.innerHTML = "RADOME";
-        btn.style.color = "#F5C542";
+        btn.style.color = "#000000";
         btn.onclick = () => {
             let p = document.getElementById("uh60-panel");
             p.style.display = (p.style.display === "none") ? "block" : "none";
@@ -102,6 +105,8 @@
             <button class="skin-btn" data-skin="E3767" style="width:100%; margin-top:10px; padding:8px; cursor:pointer; background:#179724; color:white; border:1px solid #555;">E-3,E767(A343,B763)</button>
             <button class="skin-btn" data-skin="A50" style="width:100%; margin-top:10px; padding:8px; cursor:pointer; background:#179724; color:white; border:1px solid #0088cc; font-weight:bold;">A-50(Il-76)</button>
             <button class="skin-btn" data-skin="E4B" style="width:100%; margin-top:10px; padding:8px; cursor:pointer; background:#179724; color:white; border:1px solid #0088cc; font-weight:bold;">E-4B</button>
+            <button class="skin-btn" data-skin="E8C" style="width:100%; margin-top:10px; padding:8px; cursor:pointer; background:#179724; color:white; border:1px solid #0088cc; font-weight:bold;">E-8C</button>
+
         `;
         document.body.appendChild(panel);
 
